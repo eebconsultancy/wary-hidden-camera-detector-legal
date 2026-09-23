@@ -99,16 +99,14 @@ a {
   letter-spacing: 0.12em;
 }
 
-.section h2,
-.support h2 {
+.section h2 {
   margin: 0;
   font-size: 32px;
   line-height: 1.15;
   letter-spacing: -0.025em;
 }
 
-.section-heading p,
-.support p {
+.section-heading p {
   margin: 14px 0 0;
   color: var(--muted);
   font-size: 16px;
@@ -178,40 +176,32 @@ a {
 
 /* Support */
 
-.support {
-  padding: 48px;
-  margin-bottom: 88px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  box-shadow: var(--shadow);
+.support-simple {
+  padding: 48px 0 72px;
+  border-top: 1px solid var(--border);
 }
 
-.support p {
-  max-width: 620px;
+.support-simple h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
-.support-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 46px;
-  margin-top: 26px;
-  padding: 0 20px;
-  border-radius: 12px;
-  background: var(--accent);
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
+.support-simple p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.support-simple a {
+  color: var(--accent);
+  font-weight: 650;
   text-decoration: none;
-  transition:
-    transform 180ms ease,
-    opacity 180ms ease;
 }
 
-.support-button:hover {
-  transform: translateY(-1px);
-  opacity: 0.92;
+.support-simple a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -267,6 +257,10 @@ footer p {
   font-size: 14px;
   font-weight: 650;
   text-decoration: none;
+}
+
+.legal-page nav a:hover {
+  text-decoration: underline;
 }
 
 .legal-header {
@@ -354,9 +348,8 @@ footer p {
     padding: 22px;
   }
 
-  .support {
-    padding: 30px 24px;
-    margin-bottom: 64px;
+  .support-simple {
+    padding: 40px 0 56px;
   }
 
   .legal-header {
